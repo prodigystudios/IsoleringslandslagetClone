@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Isoleringslandslaget</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/IsoleringslandslagetClone.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3" id="top">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/Picture/Image1.jpg" width="350" height="60"/></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#paragraphID" class="nav-link text-dark">Om Oss</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Members">Medarbetare</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#paragraphID" class="nav-link text-dark">Kontakta oss</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            <div class="AboutusDiv">
+                 <h4>OM OSS</h4>
+                 <p id="paragraphID">Isoleringslandslaget är Svenska Landslaget i Lösullsisolering. 
+                Vi är en rikstäckande försäljningsorganisation som utför lösullsentreprenader i hela Sverige. 
+                Utöver tilläggsisolering av vindar erbjuder vi lösullsisolering i alla konstruktioner och kompletta byggsystem med tätskikt och tejp som behövs för att bygga sunda, 
+                energisnåla, fukt- och brandsäkra byggnadskonstruktioner. Vi är partner med Pro clima, som är världsledande inom diffusionsöppna tätskikt. 
+                Isoleringslandslaget är medlem i IG Passivhus och har en anställd Passivhusexpert. Fråga någon som vet, fråga Isoleringslandslaget!</p>
+            &copy; 2022 
+            </div>
+            <div class="LinkDiv" >
+                <h4>SNABBLÄNKAR</h4>
+                <p id="paragraphID"> 
+                Cellulosaisolering
+                <br />
+                Tätskikt Pro Clima
+                <br />
+                Lättreglar - Lösvirke
+                <br />
+                Tilläggsisolering
+                <br />
+                Referenser
+                <br />
+                Mer om oss
+                <br />
+                Kontakt
+                <br />
+                Integritetspolicy</p>
+               
+            </div>
+            <div class="ContactDiv">
+                <h4>KONTAKTA OSS</h4>
+                <p id="paragraphID">
+                    Isoleringslandslaget AB 
+                    <br />
+                    Gamla Stallet, Stora Wäsby
+                    <br />
+                    194 37 UPPLANDS VÄSBY
+                    <br />
+                    <br />
+                    Org.nr.: 559022-5800
+                    <br />
+                    <br />
+                    Tel: <a href="tel:0200-43 88 59">0200-43 88 59</a>
+                    <br />
+                    Mail: <a href="mailto:info@isoleringslandslaget.se">info@isoleringslandslaget.se</a></p>
+            </div>
+            <div class="arrow"> 
+                <a href="#top"><img src="~/Picture/Pil.png" width="40" height="40"/></a>
+                </div>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

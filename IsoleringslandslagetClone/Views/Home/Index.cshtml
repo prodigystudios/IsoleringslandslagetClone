@@ -1,0 +1,115 @@
+﻿@model IsoleringslandslagetClone.Models.Contact;
+@{
+    ViewData["Title"] = "Hem";
+}
+
+
+
+<body>
+    @*LeftPictureTop*@
+    <div class="ImageLeft">
+        <img src="~/Picture/Image2.jpeg" width="400" height="200"/>
+    </div>
+     @*RightPictureTop*@
+    <div class="ImageRight">
+        <img src="~/Picture/Image3.png" width="400" height="200"/>
+    </div>
+    @*MainHeadLine*@
+    <div class="MainHeading"> 
+    <h1>LÖSULLSISOLERING / CELLULOSAISOLERING
+        <br />
+        – TILLÄGGSISOLERA VINDEN OCH SPARA PENGAR!</h1>
+        <h3 style="color:gray">SÅ HÄR GÅR DET TILL</h3>   
+    </div>
+    @*MainInformation*@
+    <div class="MainWorkFlow">
+        <h2>KOSTNADSFRI OFFERT</h2>
+        <p style="width:350px">
+            Om det behövs kommer vi ut och inventerar er vind utan kostnad.<br /> 
+            Efter inventeringen sammanställer vi hur det ser ut och återkommer med ett kostnadsförslag.
+        </p>
+        <h2 style="position:relative;left:450px;top:-140px;">
+        DAGS ATT ISOLERA MED LÖSULL</h2>
+        <p style="position:relative;left:450px;top:-140px;">
+        När ni accepterat offerten är det dags för lösullsentreprenad.<br /> 
+        Vi planerar in arbetet som skall göras i nära samråd med er som kund. <br /> 
+        En tilläggsisolering är oftast klar på några timmar.
+        </p>
+        <h2 style="position:relative;left: 1050px;top:-260px;">
+        SPARA PENGAR ÅR EFTER ÅR</h2>
+        <p style="position:relative;left: 1050px;top:-260px;">
+            När vinden är tilläggsisolerad börjar besparingen direkt.<br /> 
+            Era sänkta uppvärmningskostnader är bestående och ni sparar pengar år efter år. <br />
+            Vad ska du göra med pengarna du sparar?
+        </p>
+    </div>
+    @*Divder*@
+    <div class="divider">
+        <canvas class="myCanvas">
+        </canvas>
+    </div>
+    @*SeconderyInformationMid*@
+    <div>
+        
+        <h3 style="position:relative;top:-700px;left:185px">
+            GRATTIS SVERIGE</h3>
+        <p style="position:relative;top:-700px;left:-90px; width:850px;font-size:14px;">
+        Nu introducerar vi ProClima tätskiktsprodukter! ProClima är världsledande inom diffusionsöppna tätskikt och finns i 30 länder.<br />
+        Isoleringslandslaget är ProClimas partner i Sverige och våra experter hjälper er gärna att utforma ett lufttät, <br />
+        energieffektivt samt fukt- och brandsäkert klimatskal. <br />
+        Vi hjälper dig gärna att välja rätt tätskiktsprodukter till ditt byggprojekt. Kontakta oss idag!</p>
+    </div>
+    @*LeftPictureMid*@
+    <div class="leftImageMidPage">
+       <img src="~/Picture/Image5.jpg"width="650" height="180"/>
+    </div> 
+    @*seconderyImage*@
+    <div class="leftSeconderyImageMid">
+        <img src="~/Picture/Image6.jpg.png" width="650" height="150" />        
+    </div>
+    @*rightPictureMid*@
+    <div class="rightImageMidPage">
+        <img src="~/Picture/Image4.jpg" width="650" height="550"/>        
+    </div>
+    @*ContactForm*@
+    <div class="mainForm">
+        <div class="FormHeader">
+            <h4>FYLL I FORMULÄRET SÅ KONTAKTAR VI DIG INOM KORT!</h4>
+        </div>
+        <form asp-action="GetInfo" class="formClass">
+            <div>
+                <input asp-for="name" class="LeftForm" placeholder="NAMN" /><br />
+                <input asp-for="city" class="LeftForm" placeholder="ORT" /><br />
+            </div>
+            <div>
+                <input asp-for="phoneNumber" class="RightForm" placeholder="TELEFONNUMMER" /><br />    
+                <input asp-for="email" class="RightForm" placeholder="EMAIL" /><br />;
+            </div>
+            <div>
+                <input asp-for="message" class="MessageBox" placeholder="FYLL I DITT MEDDELANDE HÄR..." /> <br />
+            </div>
+            <input type="submit" value="SKICKA INTRESSEANÄLAN"class="sendButton" />
+        </form>
+    </div>
+    @*LastPost*@
+    <div class="bottomInfo">
+        <h4 style="text-align:center ;" >VI BRYR OSS, PÅ RIKTIGT!</h4>
+        <p>För oss är det viktigt att bidra till ett hållbart samhälle på alla plan. <br />
+            Därför skänker vi minst 10% av vinsten till välgörande ändamål varje år. <br />
+            I år satsar vi på Hand in Hand för att hjälpa till att minska fattigdomen i världen med hjälp av entreprenörskap. <br />
+            Läs mer om Hand in Hand’s arbete här: <a href="https://www.handinhandsweden.se/"target="_blank">www.handinhand.nu</a><br />
+
+            Vi kommer också att stödja WWF och plantera träd i regnskogen för att kompensera för den lilla miljöpåverkan vi har. <br />
+            Mer om detta arbete kommer presenteras på hemsidan.<br />
+
+            Utöver arbetet med välgörenhet försöker vi minska byggnaders miljöpåverkan genom att isolera med miljöanpassad cellulosaisolering från isEco. <br />
+            Då cellulosaisolering binder mer koldioxid än den släpper ut från vagga till grav är den klimatpositiv och bidrar till en minskad global uppvärmning.<br /> 
+            Faktum är att cellulosaisolering är ansett vara det grönaste, kommersiellt gångbara, isoleringsmaterialet på den Europeiska marknaden.</p>
+    </div>
+    @*LastImage*@
+    <div class="weSupportImage">
+        <img src="~/Picture/image7.jpg" width="450" height="400" />
+    </div>
+</body>
+
+

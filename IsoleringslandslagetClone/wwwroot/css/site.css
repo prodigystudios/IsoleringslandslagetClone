@@ -1,0 +1,191 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html 
+  {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 0;
+    overflow-x: hidden;
+}
+
+.MainHeading
+{
+    height:fit-content;
+    position:relative;
+    height:20rem;
+    text-align:center;
+}
+.MainWorkFlow {
+    position: relative;
+    left: -950px;
+    height: 60rem;
+    float:right;
+    font-size:13px;
+}
+
+.ImageLeft {
+    position: relative;
+    left: 600px;
+    top: 50px;
+    width: 1px;
+}
+.ImageRight {
+    position: relative;
+    left: 200px;
+    top: -150px;
+    width: 1px;
+    
+}
+
+.leftImageMidPage 
+{
+    position: relative;
+    left: -100px;
+    top: -650px;
+}
+.leftSeconderyImageMid {
+    position: relative;
+    left: -100px;
+    top: -550px;
+}
+.rightImageMidPage {
+    position: relative;
+    top: -1150px;
+    float: right
+}
+
+.myCanvas 
+{
+    width: 1590px;
+    height: 15px;
+    border: 12px solid #138fcf;
+    position: relative;
+    left: -190px;
+    top: -750px;
+}
+.mainForm {
+    position:absolute;
+    width:1px;
+}
+.FormHeader {
+    position: absolute;
+    bottom:65rem;
+    left:-146px;
+    width: 700px;
+    padding-bottom:7px;
+    color: #db7811 !important;
+    text-align: left;
+}
+.formClass {
+    position:relative;
+}
+.LeftForm {
+    border-width: 2px;
+    border-color: rgba(19,143,207,.66);
+    background-color: rgba(19,143,207,.22);
+
+    position:relative;
+    bottom:30rem;
+    right:150px;
+    width: 800px;
+    height: 45px;
+    padding-left:13px;
+    margin-top:40px;
+}
+.RightForm {
+    border-width: 2px;
+    border-color: rgba(19,143,207,.66);
+    background-color: rgba(19,143,207,.22);
+
+    position: relative;
+    bottom:40.7rem;
+    left:700px;
+    width: 800px;
+    height: 45px;
+    margin-top: 40px;
+    padding-left: 13px;
+}
+.MessageBox {
+    border-width: 2px;
+    border-color: rgba(19,143,207,.66);
+    background-color: rgba(19,143,207,.22);
+
+    position: relative;
+    bottom:38rem;
+    right:150px;
+    width: 1650px;
+    padding-left: 13px;
+    padding-top:10px;
+    padding-bottom:10em;
+    text-align:start;    
+}
+.sendButton 
+{
+    border-width: 2px;
+    border-color: rgba(19,143,207,.66);
+    background-color: rgba(19,143,207,.22);
+
+    position: relative;
+    bottom:36rem;
+    left:72rem;
+    height: 45px;
+    width: 350px;
+    text-align:center;
+    cursor:pointer;
+}
+
+.sendButton:hover {
+    border-width: 3px;
+    border-color: rgba(19,143,207,.66);
+    background-color: rgba(19,143,200,.11);
+}
+.bottomInfo {
+    position: absolute;
+    left:50px;
+    bottom:28rem;
+    text-align: center;
+    height:0px;
+}
+.weSupportImage {
+    position: absolute;
+    float:right;
+    bottom:30rem;
+    right:200px;
+    height:0px;
+}
+.arrow{
+    position:relative;
+    left:90rem;
+    bottom:10rem;
+    width:fit-content;
+    height:fit-content;
+}
+.MembersDiv {
+    position:relative;
+    text-align:center;
+    padding-top:15px;
+}
+.image-layout {
+    position: relative;
+    right: 100px;
+    width: fit-content;
+    display: flex;
+    padding-top: 20px;
+    padding-block: 50px;
+    gap: 160px;
+}
+
+.member_link {
+    text-decoration:none;
+}
